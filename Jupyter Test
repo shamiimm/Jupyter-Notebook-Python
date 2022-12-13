@@ -1,169 +1,78 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "e71628ad",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Write a code to show user information on seperate lines"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "a340fe03",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 1\n",
-    "#Coding with \\n function\n",
-    "print (\" ◄ Name: Shamim \\n ◄ Family: Fadaakar \\n ◄ Address: Rasht-Iran \\n ◄ Academic Education(s): BS of Software Engineering, MS of Accounting \")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "3781fdd7",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 2\n",
-    "# coding with 'Enter & triple quotation' methode\n",
-    "print ('''◄ Name: Shamim\n",
-    "◄ Family: Fadaakar\n",
-    "◄ Address: Rasht-Iran\n",
-    "◄ Academic Education(s): BS of Software Engineering, MS of Accounting''')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "251420ed",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 3\n",
-    "# coding with 'Input' methode, Re-Run this code to enter your own data :)\n",
-    "Name = input (\"◄ Name: \")\n",
-    "FN = input (\"◄ Family: \") # FN = Family Name\n",
-    "Address = input (\"◄ Address: \")\n",
-    "Education = input (\"◄ Academic Education: \")\n",
-    "print (\"◄ Name: \",Name, '\\n' ,\"◄ Family: \",FN, '\\n' ,\"◄ Address \",Address,'\\n',\"◄ Academic Education \", Education,'\\n')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "37acfdea",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 4\n",
-    "Name = \"Shamim\"\n",
-    "LastName = \"Fadaakar\"\n",
-    "Address = \"Rasht-Iran\"\n",
-    "Education = \"BS of Software Engineering, MS of Accounting\"\n",
-    "print(\n",
-    "      \" ◄ Name:     \",Name,'\\n' ,\n",
-    "      \"◄ LastName: \",LastName, '\\n' ,\n",
-    "      \"◄ Address:  \",Address,'\\n',\n",
-    "      \"◄ Education:\", Education,'\\n'\n",
-    ")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d64922b3",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 5\n",
-    "# simple print function \n",
-    "Name = 'Shamim'\n",
-    "Family = 'Fadaakar'\n",
-    "Address = 'Rasht-Iran'\n",
-    "Education = 'BS of Software Engineering, MS of Accounting'\n",
-    "\n",
-    "print('First name: ', Name)\n",
-    "print(\"Last name:   \" + Family)\n",
-    "print('Address:     ' + Address)\n",
-    "print('Education:   ' + Education) #, sep=\"\\n\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "4a293977",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 6\n",
-    "# `+` operator \n",
-    "Name = 'Shamim'\n",
-    "Family = 'Fadaakar'\n",
-    "Address = 'Rasht-Iran'\n",
-    "Education = 'BS of Software Engineering, MS of Accounting'\n",
-    "\n",
-    "print('First name:  ' + Name, \"Last Name:   \" + Family, 'Address:     ' + Address, 'Education:   ' + Education, sep=\"\\n\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d7927f72",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 7\n",
-    "# use f-strings\n",
-    "Name = 'Shamim'\n",
-    "Family = 'Fadaakar'\n",
-    "Address = 'Rasht-Iran'\n",
-    "education = 'BS of Software Engineering, MS of Accounting'\n",
-    "\n",
-    "print(f'Name:   {Name}', f\"Family:    {Family}\", f'Address:   {Address}', f'Education: {education}', sep=\"\\n\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "e9a4849f",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "#Method 8\n",
-    "# Use f-strings with padding inside to make them align\n",
-    "first_name = 'Shamim'\n",
-    "surname = 'Fadaakar'\n",
-    "address = 'Rasht-Iran'\n",
-    "education = 'BS of Software Engineering, MS of Accounting'\n",
-    "\n",
-    "print(f'{\"First name:\" :<13}{first_name}', f'{\"Surname:\" :<13}{surname}', f'{\"Address:\" :<13}{address}', f'{\"education:\" :<13}{education}', sep=\"\\n\")"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.9.12"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+#Write a code to show user information on seperate lines
+#Method 1
+#Coding with \n function
+print (" ◄ Name: Shamim \n ◄ Family: Fadaakar \n ◄ Address: Rasht-Iran \n ◄ Academic Education(s): BS of Software Engineering, MS of Accounting ")
+########################################################################################################################################################################
+
+#Method 2
+# coding with 'Enter & triple quotation' methode
+print ('''◄ Name: Shamim
+◄ Family: Fadaakar
+◄ Address: Rasht-Iran
+◄ Academic Education(s): BS of Software Engineering, MS of Accounting''')
+########################################################################################################################################################################
+
+#Method 3
+# coding with 'Input' methode, Re-Run this code to enter your own data :)
+Name = input ("◄ Name: ")
+FN = input ("◄ Family: ") # FN = Family Name
+Address = input ("◄ Address: ")
+Education = input ("◄ Academic Education: ")
+print ("◄ Name: ",Name, '\n' ,"◄ Family: ",FN, '\n' ,"◄ Address ",Address,'\n',"◄ Academic Education ", Education,'\n')
+#########################################################################################################################################################################
+
+#Method 4
+Name = "Shamim"
+LastName = "Fadaakar"
+Address = "Rasht-Iran"
+Education = "BS of Software Engineering, MS of Accounting"
+print(
+      " ◄ Name:     ",Name,'\n' ,
+      "◄ LastName: ",LastName, '\n' ,
+      "◄ Address:  ",Address,'\n',
+      "◄ Education:", Education,'\n'
+)
+###########################################################################################################################################################################
+
+#Method 5
+# simple print function 
+Name = 'Shamim'
+Family = 'Fadaakar'
+Address = 'Rasht-Iran'
+Education = 'BS of Software Engineering, MS of Accounting'
+
+print('First name: ', Name)
+print("Last name:   " + Family)
+print('Address:     ' + Address)
+print('Education:   ' + Education) #, sep="\n")
+#############################################################################################################################################################################
+
+#Method 6
+# `+` operator 
+Name = 'Shamim'
+Family = 'Fadaakar'
+Address = 'Rasht-Iran'
+Education = 'BS of Software Engineering, MS of Accounting'
+
+print('First name:  ' + Name, "Last Name:   " + Family, 'Address:     ' + Address, 'Education:   ' + Education, sep="\n")
+#############################################################################################################################################################################
+
+#Method 7
+# use f-strings
+Name = 'Shamim'
+Family = 'Fadaakar'
+Address = 'Rasht-Iran'
+education = 'BS of Software Engineering, MS of Accounting'
+
+print(f'Name:   {Name}', f"Family:    {Family}", f'Address:   {Address}', f'Education: {education}', sep="\n")
+###########################################################################################################################################################################
+
+#Method 8
+# Use f-strings with padding inside to make them align
+first_name = 'Shamim'
+surname = 'Fadaakar'
+address = 'Rasht-Iran'
+education = 'BS of Software Engineering, MS of Accounting'
+
+print(f'{"First name:" :<13}{first_name}', f'{"Surname:" :<13}{surname}', f'{"Address:" :<13}{address}', f'{"education:" :<13}{education}', sep="\n")
+#########################################################################################################################################################################
