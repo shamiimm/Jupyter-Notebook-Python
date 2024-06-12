@@ -1,4 +1,4 @@
-#Write a code to show user information on seperate lines
+#Write a code to show user information on separate lines
 #Method 1
 #Coding with \n function
 print (" ◄ Name: Shamim \n ◄ Family: Fadaakar \n ◄ Address: Rasht-Iran \n ◄ Academic Education(s): BS of Software Engineering, MS of Accounting ")
